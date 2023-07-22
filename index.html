@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Matching Game</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <main>
+    <div>
+      <button class="button" id="startButton">Start</button>
+      <button class="button" disabled id="reloadButton">Reload</button>
+    </div>
+    <div id="timerContainer"></div>
+    <div id="gameContainer"></div>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="anime.min.js"></script>
+  <script>
+    startButton.addEventListener("click", animate);
+    reloadButton.addEventListener("click", animate);
+
+    function animate() {
+      anime({
+        targets: '#gameContainer',
+        top: ['0', '120px'],
+        easing: 'easeInOutQuad',
+        duration: 1000
+      });
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  font-family: 'Arial';
+}
+
+.button {
+  padding: 10px 30px;
+  border-radius: 3px;
+  border: none;
+}
+
+.button:enabled {
+  cursor: pointer;
+  background: #5be7a9;
+}
+
+#gameContainer {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: #ccc;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.light .card {
+  background-color: #c4c1e0;
+  border-color: #7c73e6;
+  color: #7c73e6;
+}
+
+.dark .card {
+  background-color: #34495e;
+  border-color: #22313f;
+  color: #8dc6ff;
+}
+
+.card.visible {
+  background-color: #fff;
+}
+
+.dark .card.visible {
+  background-color: #415a75;
+}
+
+#timerContainer {
+  margin-top: 30px;
+  text-align: center;
+}
